@@ -1,0 +1,46 @@
+Polymorphic Encoder for Python 3
+
+Disclaimer
+The author assumes no responsibility for any misuse of this tool. It was developed strictly for educational and research purposes.
+
+Description
+This tool encrypts Python 3 source code using a polymorphic encoding technique designed to evade rapid detection by antivirus software.
+
+Important Notes:
+
+The Python 3 source code is provided via an external file.
+
+The script "encoder.py" is obfuscated to enhance security and prevent immediate detection.
+
+
+Execution
+To run the encrypted code, use the following command:
+
+    python3 encrypted_code.py
+
+Supported Architectures
+
+    linux_aarch64
+
+    linux_armv7
+
+    linux_x86_64
+
+
+Dependencies
+Make sure you have the following installed:
+
+    Python 3.10.12
+
+    pip for Python 3
+
+
+Installation
+To install the required dependencies, run:
+
+    python3 -m pip install -r requirements.txt
+
+Usage
+To encrypt a Python script, run:
+
+    python3 encoder.py
