@@ -8,9 +8,13 @@ This tool encrypts Python 3 source code using a polymorphic encoding technique d
 
 Important Notes:
 
+It is multiplatform 
+
+In the output of the obfuscated code, "#!/usr/bin/python3" is applied but it is a junk note, you can remove it if you like.
+
 The Python 3 source code is provided via an external file.
 
-The script "encoder.py" is obfuscated to enhance security and prevent immediate detection.
+The script is obfuscated to avoid being analyzed by antivirus companies and rendered useless. 
 
 
 Execution
