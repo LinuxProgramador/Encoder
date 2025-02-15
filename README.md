@@ -8,7 +8,7 @@ This tool encrypts Python 3 source code using a polymorphic encoding technique d
 
 Important Notes:
 
-It is multiplatform 
+The script is only for Linux Distros 
 
 In the output of the obfuscated code, "#!/usr/bin/python3" is applied but it is a junk note, you can remove it if you like.
 
