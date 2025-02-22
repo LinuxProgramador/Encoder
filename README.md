@@ -36,7 +36,7 @@ Dependencies:
 
 Make sure you have the following installed:
 
-    Python 3.10.12
+    Python3
 
     pip for Python 3
 
