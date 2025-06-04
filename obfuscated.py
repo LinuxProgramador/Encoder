@@ -111,8 +111,7 @@ def obfuscation():
         print(f"Error writing output file: {e}")
         return
 
-    print(f"The file has been successfully obfuscated and saved to:\n  {output_path}")
-    print("To run the original code, simply execute:\n  python3 obfuscated_code.py")
-
+    print(f"The file has been successfully obfuscated and saved to:  {output_path}")
+    
 if __name__ == "__main__":
     obfuscation()
