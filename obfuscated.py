@@ -3,7 +3,6 @@
 import os
 import random
 import base64
-import sys
 
 CHARACTERS = {
     'd': '€¢',
