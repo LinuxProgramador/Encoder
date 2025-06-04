@@ -11,7 +11,7 @@ from py_compile import compile
 
 def generate_random_noise():
     """Genera ruido aleatorio como cadenas base64 codificadas."""
-    return ''.join(str(base64.b64encode(urandom(128))) for _ in range(choice(range(5, 20))))
+    return ''.join(str(base64.b64encode(urandom(64))) for _ in range(choice(range(5, 20))))
 
 
 def generate_variable_names():
