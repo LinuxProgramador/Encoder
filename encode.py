@@ -11,7 +11,7 @@ from py_compile import compile
 
 def generate_random_noise():
     """Genera ruido aleatorio como cadenas base64 codificadas."""
-    return ''.join(str(base64.b64encode(urandom(64))) for _ in range(choice(range(5, 20))))
+    return ''.join(str(base64.b64encode(urandom(128))) for _ in range(choice(range(5, 20))))
 
 
 def generate_variable_names():
@@ -37,19 +37,23 @@ import datetime
 import time
 from cryptography.fernet import Fernet as {names['fernet_class_alias']}
 {names['key_var']} = {key}
+{names['func_name']} = "{noise_1}"
 {names['enc_var']} = {encrypted_data}
 {names['fernet_func_var']} = {names['fernet_class_alias']}({names['key_var']})
+{names['func_name']} = "{noise_1}"
 {names['dec_var']} = {names['fernet_func_var']}.decrypt({names['enc_var']}).decode()
 exec({names['dec_var']})
 """,
 
         f"""#!/usr/bin/python3
-
+{names['func_name']} = "{noise_1}"
 import time
 from cryptography.fernet import Fernet
 {names['key_var']} = {key}
 {names['enc_var']} = {encrypted_data}
+{names['func_name']} = "{noise_1}"
 {names['fernet_func_var']} = Fernet({names['key_var']})
+{names['func_name']} = "{noise_1}"
 {names['dec_var']} = {names['fernet_func_var']}.decrypt({names['enc_var']}).decode()
 {names['compiled_code_var']} = compile({names['dec_var']}, '<string>', 'exec')
 exec({names['compiled_code_var']})
@@ -60,6 +64,7 @@ exec({names['compiled_code_var']})
 import time, base64, sys
 from cryptography.fernet import Fernet as {names['fernet_class_alias']}
 {names['key_var']} = {key}
+{names['func_name']} = "{noise_1}"
 {names['enc_var']} = {encrypted_data}
 {names['fernet_func_var']} = {names['fernet_class_alias']}({names['key_var']})
 {names['dec_var']} = {names['fernet_func_var']}.decrypt({names['enc_var']}).decode()
@@ -84,7 +89,10 @@ eval({names['compiled_code_var']})
 import sys, os
 from cryptography.fernet import Fernet as {names['fernet_class_alias']}
 {names['key_var']} = {key}
+{names['func_name']} = "{noise_1}"
 {names['enc_var']} = {encrypted_data}
+{names['func_name']} = "{noise_1}"
+{names['func_name']} = "{noise_1}"
 {names['fernet_func_var']} = {names['fernet_class_alias']}({names['key_var']})
 {names['dec_var']} = {names['fernet_func_var']}.decrypt({names['enc_var']}).decode()
 exec({names['dec_var']})
