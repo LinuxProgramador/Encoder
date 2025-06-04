@@ -23,14 +23,12 @@ Usage:
 
 To encrypt a Python script, run:
 
-    python3 encoder.py
+    python3 encode.py
 
 Method for Executing Obfuscated Code from an Executable Using the exec() Function
 
 Note: In the executable, ensure that all necessary modules from the obfuscated code are imported, including cryptography.fernet, as shown in the example below:
 
-    from bcrypt import checkpw
-    
     from cryptography.fernet import Fernet
 
     with open('encrypted_code.py', 'r') as read_file:
