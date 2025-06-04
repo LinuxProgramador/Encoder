@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import base64
-from string import ascii_letters
 from cryptography.fernet import Fernet
 from secrets import choice
 from sys import exit
@@ -109,7 +108,7 @@ def encoder_data(data):
 
     var_names = generate_variable_names()
     random_noise_1 = generate_random_noise()
-    random_noise_2 = generate_random_noise() or "fallback_noise"
+    random_noise_2 = generate_random_noise()
 
     template_choice = choice(range(5))
     script_content = generate_script(template_choice, var_names, key, encrypted_data, random_noise_1, random_noise_2)
