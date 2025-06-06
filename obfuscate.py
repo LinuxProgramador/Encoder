@@ -100,9 +100,9 @@ def obfuscation():
         "",
         f"buffer = '''{code_base64_str}'''",
         "",
-        "marshalled = base64.b64decode(buffer)",
-        "code_obj = marshal.loads(marshalled)",
-        "exec(code_obj, globals(), locals())"
+        "system32 = base64.b64decode(buffer)",
+        "system = marshal.loads(system32)",
+        "exec(system, globals(), locals())"
     ]
     final_code = "\n".join(final_code_lines)
 
