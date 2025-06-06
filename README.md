@@ -31,7 +31,7 @@ Method for Executing Obfuscated Code from an Executable Using the exec() Functio
 Note: In the executable, ensure that all necessary modules from the obfuscated code are imported, including cryptography.fernet, as shown in the example below:
 
     from cryptography.fernet import Fernet
-    import base64, hashlib
+    import base64, hashlib, marshal
     
     with open('encrypted_code.py', 'r') as read_file:
     
