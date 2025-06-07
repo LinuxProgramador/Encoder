@@ -3,6 +3,8 @@ Polymorphic Encoder for Python 3
 Disclaimer
 The author assumes no responsibility for any misuse of this tool. It was developed strictly for educational and research purposes.
 
+IMPORTANT INFORMATION: Make sure you have the same version of Python3 on the computer where the obfuscated code is created and where it will be executed.
+
 RECOMMENDATION: Run encode.py first and then pass obfuscate.py to it, also recommended one round each
 
 Dependencies:
